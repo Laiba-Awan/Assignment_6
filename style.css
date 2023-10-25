@@ -41,7 +41,6 @@ body {
 }
 .outcome1 {
   text-align: center;
-  width: 30%;
   border-radius: 7px;
   background-color: rgb(163, 186, 243);
   padding: 5px;
@@ -51,7 +50,4 @@ body {
   background-color: rgb(163, 186, 243);
   padding: 9px;
   margin-bottom: 20px;
-}
-.alert.js {
-  color: red;
 }

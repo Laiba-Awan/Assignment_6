@@ -8,14 +8,13 @@ const _status = document.querySelector(".status");
 function Calculate() {
   if (weight.value == "") {
     alert("All Input Fields need to be filled!");
-    alert.classList.add("alert.js");
   } else {
     const hFt = heightFt.value * 0.3048;
     const hIn = heightIn.value * 0.0254;
     const tHeightsq = (hFt + hIn) * (hFt + hIn);
     const bmi = (weight.value / tHeightsq).toFixed(2);
     outCome.classList.add("outcome1");
-    outCome.textContent = bmi;
+    outCome.textContent = `Your Body Mass Index = ${bmi}`;
     checkBMIStatus(bmi);
   }
 }
