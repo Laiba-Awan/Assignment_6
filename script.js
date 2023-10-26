@@ -25,25 +25,19 @@ function checkBMIStatus(bmi) {
   if (bmi < 18.4) {
     status = "Underweight";
     outCome.style.backgroundColor = "yellow";
-    _status.style.backgroundColor ="yellow";
-  }
-  else if (bmi > 18.4 && bmi <= 24.9) {
+    _status.style.backgroundColor = "yellow";
+  } else if (bmi > 18.4 && bmi <= 24.9) {
     status = "Normal";
     outCome.style.backgroundColor = "lightgreen";
-    _status.style.backgroundColor ="lightgreen";
-
-  }
-  else if (bmi > 24.9 && bmi <= 39.9){
+    _status.style.backgroundColor = "lightgreen";
+  } else if (bmi > 24.9 && bmi <= 39.9) {
     status = "Overweight";
     outCome.style.backgroundColor = "Orange";
-    _status.style.backgroundColor ="Orange";
-
-  } 
-  else if (bmi >= 40.0) {
+    _status.style.backgroundColor = "Orange";
+  } else if (bmi >= 40.0) {
     status = "Obese";
     outCome.style.backgroundColor = "red";
-    _status.style.backgroundColor ="red";
-
+    _status.style.backgroundColor = "red";
   }
   _status.classList.add("stts");
   _status.textContent = `This is considered ${status}`;
