@@ -6,7 +6,7 @@ const _status = document.querySelector(".status");
 
 // FUNCTION TO CALCULATE BMI-------
 function Calculate() {
-  if (weight.value || heightFt.value || heightIn.value == "") {
+  if (weight.value == "") {
     alert("All Input Fields need to be filled!");
   } else {
     const hFt = heightFt.value * 0.3048;
